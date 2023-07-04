@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutus">About Us</a></li>
+    <li><a href="/contactus" class="navLink">Contact Us</a></li>
+  </ul>
+</nav>
+<% if (typeof currentUser !== 'undefined') { %>
+<%= currentUser.name %>
+<% } %>
